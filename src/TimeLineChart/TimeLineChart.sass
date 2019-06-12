@@ -1,0 +1,90 @@
+.TimeLineChart
+    //width: 100% !important
+    width: 100% !important
+    div:nth-of-type(1)
+        div
+            div
+                overflow: hidden !important
+    @media screen and (min-width: 1750px)
+        width: 680px !important
+    div:first-of-type
+        width: 100% !important
+    div:nth-of-type(2)
+        height: 150px !important
+    div.google-visualization-tooltip 
+        pointer-events: none !important
+    svg > g > g:last-child 
+         pointer-events: none !important
+    svg
+        g:first-of-type
+            rect
+                display: none !important
+        g:nth-of-type(3),g:nth-of-type(4)
+            @for $i from 1 through 100 
+                $x: 9
+                $y: $x + ($i * 17)
+                rect:nth-of-type(#{$i}) 
+                    display: block !important
+                    y: $y !important
+                    position: fixed !important
+                    &:hover
+                        display: block !important
+
+        g:nth-of-type(5),g:nth-of-type(6)
+            display: none !important
+
+        rect
+            stroke-width: 0
+            stroke: white
+            height: 9px !important
+            rx: 5px
+        // rect:nth-of-type(even)
+        //     display: none
+            //fill-opacity: 1 !important
+        path
+            display: none !important
+        text
+            display: none !important
+
+.TimeLineChart-width
+    width: 100% !important
+    div:nth-of-type(1)
+        div
+            div
+                overflow: hidden !important
+    div:nth-of-type(2)
+        height: 150px !important
+    div.google-visualization-tooltip 
+        pointer-events: none !important
+    svg > g > g:last-child 
+         pointer-events: none !important
+    svg
+        g:first-of-type
+            rect
+                display: none !important
+        g:nth-of-type(3),g:nth-of-type(4)
+            @for $i from 1 through 100 
+                $x: 9
+                $y: $x + ($i * 17)
+                rect:nth-of-type(#{$i}) 
+                    display: block !important
+                    y: $y !important
+                    position: fixed !important
+                    &:hover
+                        display: block !important
+
+        g:nth-of-type(5),g:nth-of-type(6)
+            display: none !important
+
+        rect
+            stroke-width: 0
+            stroke: white
+            height: 9px !important
+            rx: 5px
+        // rect:nth-of-type(even)
+        //     display: none
+            //fill-opacity: 1 !important
+        path
+            display: none !important
+        text
+            display: none !important
