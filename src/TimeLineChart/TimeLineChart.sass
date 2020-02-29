@@ -5,7 +5,13 @@
         div
             div
                 overflow: hidden !important
+                svg
+                    height: inherit !important
+                div
+                    height: auto !important
     @media screen and (min-width: 1750px)
+        width: 680px !important
+    @media screen and ( max-width: 1749px) and (min-width: 700px)
         width: 680px !important
     div:first-of-type
         width: 100% !important
@@ -15,6 +21,8 @@
         pointer-events: none !important
     svg > g > g:last-child 
          pointer-events: none !important
+    svg > g > g:nth-of-style(2)
+        display: none !important
     svg
         g:first-of-type
             rect
@@ -58,6 +66,8 @@
         pointer-events: none !important
     svg > g > g:last-child 
          pointer-events: none !important
+    svg > g > g:nth-of-style(2)
+        display: none !important
     svg
         g:first-of-type
             rect
@@ -88,3 +98,14 @@
             display: none !important
         text
             display: none !important
+
+.google-visualization-tooltip
+    max-width: 200px !important
+
+.TimeLineChart-default
+    width: 100% !important
+    @media screen and (min-width: 1750px)
+        width: 680px !important
+    @media screen and ( max-width: 1749px) and (min-width: 700px)
+        width: 680px !important
+        
