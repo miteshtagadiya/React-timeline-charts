@@ -4,7 +4,7 @@ React-timeline-charts is a styled wrapper over React Google Charts timelines-cha
 
 ## Docs
 
-[React-timeline-charts](https://github.com/miteshtagadiya/react-timeline-charts/)
+[React-timeline-charts](https://miteshtagadiya.github.io/React-timeline-charts/)
 
 ## Example
 
