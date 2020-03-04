@@ -32,19 +32,36 @@ function App() {
   ];
   return (
     <div className="App">
-      <TimeLineChart
-        isDefault={true}
-        loader={<div>Loading Chart</div>}
-        colors={colors}
-        data={data}
-      />
-      HelloWord
-      <TimeLineChart
-        isDefault={false}
-        loader={<div>Loading Chart</div>}
-        colors={colors}
-        data={data}
-      />
+      <div className="container">
+        <div
+          style={{
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center"
+          }}
+        >
+          <TimeLineChart
+            isDefault={true}
+            loader={<div>Loading Chart</div>}
+            colors={colors}
+            data={data}
+          />
+        </div>
+        <div
+          style={{
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center"
+          }}
+        >
+          <TimeLineChart
+            isDefault={false}
+            loader={<div>Loading Chart</div>}
+            colors={colors}
+            data={data}
+          />
+        </div>
+      </div>
     </div>
   );
 }
